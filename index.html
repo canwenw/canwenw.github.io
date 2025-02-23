@@ -1,7 +1,24 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="en">
+    <head>
+        <title>Test</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            (function(d, t) {
+                var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                v.onload = function() {
+                  window.voiceflow.chat.load({
+                    verify: { projectID: '67b35e44ea204327bc674f7d' },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production', 
+                    voice: { 
+                      url: "https://runtime-api.voiceflow.com" 
+                    }
+                  });
+                }
+                v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+            })(document, 'script');
+          </script>
+    </body>
 </html>
